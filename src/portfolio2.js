@@ -3,6 +3,7 @@ import { ChevronDown, Mail, Phone, Calendar, CheckCircle, Star, Users, Award, Bo
 import profilePhoto from './assets/images/img1.png'
 import secondaryPhoto from './assets/images/img2.png'; // adjust the path if needed
 
+//import profilePhoto from './assets/images/img2.avif' // Adjust the path based on your project structure
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -33,7 +34,7 @@ const Portfolio = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="text-2xl font-bold text-slate-100">
-              Dr. Naveen Kumar
+              Dr. Naveen Kumar Vishnoi
             </div>
             <div className="hidden md:flex space-x-8">
               {['Home', 'About', 'Approach', 'Services', 'Contact'].map((item) => (
@@ -77,34 +78,34 @@ const Portfolio = () => {
                 personal transformation, emotional strength, and purposeful living through
                 evidence-based approaches and compassionate guidance.
               </p>
-             
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <div className="flex justify-center"></div>
+               <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
                 <button
-                  onClick={() => scrollToSection('contact')}
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105 transform text-center"
-                >
-                  Book a Session
-                </button>
+      onClick={() => scrollToSection('contact')}
+      className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
+    >
+      Book a Session
+    </button>
                 <button
-                  onClick={() => scrollToSection('about')}
-                  className="border-2 border-blue-500 text-blue-400 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105 transform text-center"
-                >
-                  Learn More
-                </button>
+      onClick={() => scrollToSection('about')}
+      className="border-2 border-blue-500 text-blue-400 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-200"
+    >
+      Learn More
+    </button>
               </div>
             </div>
 
             {/* Right Content - Professional Photo */}
-             <div className="flex justify-center lg:justify-end">
-                          <div className="relative">
-                            <div className="w-[28rem] h-[36rem] bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl shadow-2xl border-4 border-slate-600 flex items-center justify-center">
-                              <img
-                                src={profilePhoto}
-                                alt="Professional Portrait"
-                                className="w-[26rem] h-[34rem] object-cover rounded-xl shadow-lg"
-            />
-            
-                            </div>
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                <div className="w-[28rem] h-[36rem] bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl shadow-2xl border-4 border-slate-600 flex items-center justify-center">
+                  <img
+                    src={profilePhoto}
+                    alt="Professional Portrait"
+                    className="w-[26rem] h-[34rem] object-cover rounded-xl shadow-lg"
+/>
+
+                </div>
                 {/* Decorative Elements */}
                 
               </div>
@@ -126,22 +127,24 @@ const Portfolio = () => {
             <div className="w-24 h-1 bg-blue-500 mx-auto rounded"></div>
           </div>
 
-
           <div className="grid lg:grid-cols-3 gap-8 mb-16">
-            {/* Left Column - Larger Second Photo */}
+            {/* Left Column - Second Photo */}
             <div className="lg:col-span-1">
               <div className="sticky top-32">
-                <div className="w-full h-[28rem] bg-gradient-to-br from-slate-600 to-slate-500 rounded-2xl shadow-xl border-2 border-slate-500 flex items-center justify-center overflow-hidden">
-                  <div className="w-full h-full bg-slate-600 flex items-center justify-center text-slate-400">
-                    <Award size={100} />
-                  </div>
+                <div className="w-full h-90 bg-gradient-to-br from-slate-600 to-slate-500 rounded-2xl shadow-lg border-2 border-slate-500 flex items-center justify-center">
+                  <img
+                    src={secondaryPhoto}
+                    alt="Academic or Workplace Setting"
+                    className="w-full h-full object-cover rounded-2xl"
+/>
+
                 </div>
               </div>
             </div>
 
             {/* Right Columns - Content */}
             <div className="lg:col-span-2 space-y-8">
-              <div className="bg-slate-600 p-8 rounded-2xl shadow-lg">
+              <div className="bg-slate-600 p-8 rounded-2xl">
                 <div className="flex items-center mb-6">
                   <BookOpen size={32} className="text-blue-400 mr-4" />
                   <h3 className="text-2xl font-bold text-slate-100">Professional Background</h3>
@@ -153,7 +156,7 @@ const Portfolio = () => {
                 </p>
               </div>
 
-              <div className="bg-blue-900/30 p-8 rounded-2xl shadow-lg">
+              <div className="bg-blue-900/30 p-8 rounded-2xl">
                 <div className="flex items-center mb-6">
                   <Heart size={32} className="text-blue-400 mr-4" />
                   <h3 className="text-2xl font-bold text-slate-100">My Journey</h3>
@@ -169,17 +172,17 @@ const Portfolio = () => {
 
           {/* Credentials */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="text-center p-8 bg-blue-900/30 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+            <div className="text-center p-6 bg-blue-900/30 rounded-xl">
               <Award size={48} className="text-blue-400 mx-auto mb-4" />
               <h4 className="text-xl font-bold text-slate-100 mb-2">PhD in Management</h4>
               <p className="text-slate-300">Advanced academic foundation</p>
             </div>
-            <div className="text-center p-8 bg-slate-600 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+            <div className="text-center p-6 bg-slate-600 rounded-xl">
               <Users size={48} className="text-slate-300 mx-auto mb-4" />
               <h4 className="text-xl font-bold text-slate-100 mb-2">20+ Years Experience</h4>
               <p className="text-slate-300">Education & mentoring expertise</p>
             </div>
-            <div className="text-center p-8 bg-blue-900/30 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+            <div className="text-center p-6 bg-blue-900/30 rounded-xl">
               <Brain size={48} className="text-blue-400 mx-auto mb-4" />
               <h4 className="text-xl font-bold text-slate-100 mb-2">Behavioral Science</h4>
               <p className="text-slate-300">Research-based methodologies</p>
@@ -187,7 +190,7 @@ const Portfolio = () => {
           </div>
 
           {/* Why Choose Me */}
-          <div className="bg-slate-900 text-white p-12 rounded-2xl text-center shadow-xl">
+          <div className="bg-slate-900 text-white p-12 rounded-2xl text-center">
             <h3 className="text-3xl font-bold mb-6">Why Choose Me?</h3>
             <p className="text-xl leading-relaxed max-w-4xl mx-auto opacity-90">
               I offer a calm, structured, and empathetic coaching space tailored to your goals and
@@ -354,17 +357,17 @@ const Portfolio = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="text-center p-8 bg-slate-800 rounded-2xl hover:shadow-xl transition-all duration-300">
+            <div className="text-center p-8 bg-slate-800 rounded-2xl">
               <Mail size={32} className="text-blue-400 mx-auto mb-4" />
               <h3 className="text-xl font-bold mb-2">Email</h3>
               <p className="text-slate-300">naveen@lifecoaching.com</p>
             </div>
-            <div className="text-center p-8 bg-slate-800 rounded-2xl hover:shadow-xl transition-all duration-300">
+            <div className="text-center p-8 bg-slate-800 rounded-2xl">
               <Phone size={32} className="text-green-400 mx-auto mb-4" />
               <h3 className="text-xl font-bold mb-2">Phone</h3>
               <p className="text-slate-300">+91 98765 43210</p>
             </div>
-            <div className="text-center p-8 bg-slate-800 rounded-2xl hover:shadow-xl transition-all duration-300">
+            <div className="text-center p-8 bg-slate-800 rounded-2xl">
               <Calendar size={32} className="text-yellow-400 mx-auto mb-4" />
               <h3 className="text-xl font-bold mb-2">Schedule</h3>
               <p className="text-slate-300">Mon-Fri: 9 AM - 6 PM</p>
@@ -372,7 +375,7 @@ const Portfolio = () => {
           </div>
 
           <div className="text-center">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-12 py-4 rounded-lg text-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105 transform">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-lg text-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl">
               Book Your Free Consultation
             </button>
           </div>
