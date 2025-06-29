@@ -163,7 +163,7 @@ const Portfolio = () => {
             {/* Left Column - Second Photo */}
             <div className="lg:col-span-1 order-2 lg:order-1">
               <div className="lg:sticky lg:top-32">
-                <div className="w-full h-64 sm:h-80 lg:h-90 bg-gradient-to-br from-slate-600 to-slate-500 rounded-2xl shadow-lg border-2 border-slate-500 flex items-center justify-center">
+                <div className="w-full h-96 sm:h-[28rem] lg:h-[30rem] bg-gradient-to-br from-slate-600 to-slate-500 rounded-2xl shadow-lg border-2 border-slate-500 flex items-center justify-center">
                   <img
                     src={secondaryPhoto}
                     alt="Academic or Workplace Setting"
