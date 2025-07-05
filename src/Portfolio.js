@@ -392,17 +392,18 @@ const Portfolio = () => {
             <div className="text-center p-6 lg:p-8 bg-slate-800 rounded-2xl sm:col-span-2 lg:col-span-1">
               <Mail size={24} className="text-blue-400 mx-auto mb-4 lg:w-8 lg:h-8" />
               <h3 className="text-lg lg:text-xl font-bold mb-2">Email</h3>
-              <p className="text-sm lg:text-base text-slate-300">naveen@lifecoaching.com</p>
+              <p className="text-sm lg:text-base text-slate-300">drnaveentransforms@gmail.com</p>
             </div>
             <div className="text-center p-6 lg:p-8 bg-slate-800 rounded-2xl">
               <Phone size={24} className="text-green-400 mx-auto mb-4 lg:w-8 lg:h-8" />
               <h3 className="text-lg lg:text-xl font-bold mb-2">Phone</h3>
-              <p className="text-sm lg:text-base text-slate-300">+91 98765 43210</p>
+              <p className="text-sm lg:text-base text-slate-300">+91 8949632497</p>
             </div>
             <div className="text-center p-6 lg:p-8 bg-slate-800 rounded-2xl">
               <Calendar size={24} className="text-yellow-400 mx-auto mb-4 lg:w-8 lg:h-8" />
               <h3 className="text-lg lg:text-xl font-bold mb-2">Schedule</h3>
-              <p className="text-sm lg:text-base text-slate-300">Mon-Fri: 9 AM - 6 PM</p>
+              <p className="text-sm lg:text-base text-slate-300">Weekdays: 5 PM - 11 PM</p>
+              <p className="text-sm lg:text-base text-slate-300">Weekends: 11 AM - 7 PM</p>
             </div>
           </div>
 
